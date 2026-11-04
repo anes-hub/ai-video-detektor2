@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DeepFake pomaga prepoznati, ali je videoposnetek ustvarjen ali spremenjen z umetno inteligenco.">
+  <title>DeepFake — Odkrij, kaj je resnično</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#domov" aria-label="DeepFake — domov">
+      <img class="brand-image" src="DeepFake-logo.png" alt="DeepFake — originalni logotip">
+    </a>
+    <button class="menu-toggle" aria-label="Odpri navigacijo" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navigation">
+      <a href="#domov">Domov</a>
+      <a href="#detektor">AI detektor</a>
+      <a href="#kako-deluje">Kako deluje</a>
+      <a href="#o-nas">O nas</a>
+      <a class="nav-cta" href="#detektor">Preveri video <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="domov">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> PAMETNO PREPOZNAVANJE VIDEOPOSNETKOV</div>
+        <h1>V svetu umetne inteligence je <span>resnica</span> pomembna.</h1>
+        <p class="hero-text">Odkrij, ali je videoposnetek resničen ali ustvarjen z umetno inteligenco. DeepFake ti pomaga sprejemati bolj informirane odločitve v digitalnem svetu.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#detektor">Preveri videoposnetek <span>→</span></a>
+          <a class="button button-ghost" href="#kako-deluje">Kako deluje <span>↓</span></a>
+        </div>
+        <div class="trust-row">
+          <div class="trust-icon">✦</div>
+          <div><strong>Tehnologija za več zaupanja</strong><small>Analiza. Uvid. Boljše odločitve.</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-grid"></div>
+        <div class="scan-ring ring-outer"></div>
+        <div class="scan-ring ring-inner"></div>
+        <div class="visual-logo">
+          <img class="hero-logo-image" src="DeepFake-logo.png" alt="DeepFake — originalni logotip">
+        </div>
+        <div class="float-card card-top"><span class="mini-pulse"></span><div><small>VIDEO ANALIZA</small><strong>Preverjanje vsebine</strong></div></div>
+        <div class="float-card card-bottom"><div class="signal-icon">⌁</div><div><small>NAŠ CILJ</small><strong>Več digitalnega zaupanja</strong></div></div>
+        <div class="visual-caption">SIGNAL / ANALIZA / ZANESLJIVOST</div>
+      </div>
+    </section>
+
+    <section class="metrics section-wrap" aria-label="Prednosti">
+      <div class="metric"><span class="metric-icon">◈</span><div><strong>AI detekcija</strong><small>Prepoznavanje sintetičnih vsebin</small></div></div>
+      <div class="metric"><span class="metric-icon">⌕</span><div><strong>Jasnejši vpogled</strong><small>Podpora pri preverjanju videov</small></div></div>
+      <div class="metric"><span class="metric-icon">⛨</span><div><strong>Odgovorna uporaba</strong><small>Tehnologija z realnimi omejitvami</small></div></div>
+    </section>
+
+    <section class="detector-section section-wrap" id="detektor">
+      <div class="section-heading">
+        <div class="eyebrow">PREVERI VSEBINO</div>
+        <h2>Je video resničen ali <span>ustvarjen z AI?</span></h2>
+        <p>Izberi videoposnetek in pripravi ga na analizo. Ta predstavitveni obrazec je treba povezati z vašim obstoječim AI detektorjem.</p>
+      </div>
+      <div class="detector-panel">
+        <div class="detector-panel-top"><div><span class="live-dot"></span> DEEPFAKE DETEKTOR</div><span class="panel-tag">VIDEO / MP4 · MOV · WEBM</span></div>
+        <label class="upload-zone" id="uploadZone" for="videoInput">
+          <input type="file" id="videoInput" accept="video/*" hidden>
+          <span class="upload-icon">↑</span>
+          <strong id="uploadTitle">Povleci video sem</strong>
+          <span id="uploadSubtitle">ali klikni za izbiro datoteke iz naprave</span>
+          <span class="upload-formats">Podprte video datoteke · Največ 100 MB v tej predstavitvi</span>
+        </label>
+        <div class="file-row" id="fileRow" hidden>
+          <span class="file-icon">▣</span><div class="file-details"><strong id="fileName">video.mp4</strong><small id="fileSize">0 MB</small></div><button id="removeFile" class="remove-file" type="button" aria-label="Odstrani video">×</button>
+        </div>
+        <div class="detector-actions"><span class="privacy-note"><span>⌑</span> Datoteke ne nalagaj na javno mesto.</span><button class="button button-primary analyze-button" id="analyzeButton" type="button" disabled>Začni analizo <span>→</span></button></div>
+        <div class="demo-result" id="demoResult" role="status" aria-live="polite" hidden>
+          <div class="result-symbol">i</div><div><strong>Datoteka je pripravljena</strong><p>Za dejanski rezultat poveži ta obrazec s svojim obstoječim AI detektorjem. Ta spletna stran sama ne določa, ali je video AI ali resničen.</p></div>
+        </div>
+      </div>
+      <p class="disclaimer">Rezultati avtomatskega zaznavanja niso absolutno zagotovilo. Kakovost posnetka, stiskanje in nove generativne metode lahko vplivajo na zanesljivost analize.</p>
+    </section>
+
+    <section class="how-section section-wrap" id="kako-deluje">
+      <div class="section-heading left-heading">
+        <div class="eyebrow">PREPROST POSTOPEK</div>
+        <h2>Od videa do <span>boljšega vpogleda.</span></h2>
+        <p>Jasen postopek, ki uporabniku pomaga razumeti, kako se preverja digitalna vsebina.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-number">01 <span>↗</span></div><div class="step-icon">↑</div><h3>Naloži video</h3><p>Izberi videoposnetek, ki ga želiš preveriti, in ga pripravi za analizo.</p></article>
+        <article class="step-card featured-step"><div class="step-number">02 <span>↗</span></div><div class="step-icon">⌘</div><h3>Analiza vsebine</h3><p>Povezani detektor pregleda značilnosti posnetka in poišče možne znake AI-generiranja.</p></article>
+        <article class="step-card"><div class="step-number">03 <span>↗</span></div><div class="step-icon">◉</div><h3>Preglej rezultat</h3><p>Oglej si izhod analize in ga uporabi kot pomoč pri nadaljnjem preverjanju.</p></article>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap" id="o-nas">
+      <div class="about-art"><div class="about-orbit orbit-a"></div><div class="about-orbit orbit-b"></div><div class="about-core">DF<span>✦</span></div><div class="about-label label-a">DIGITALNA VARNOST</div><div class="about-label label-b">AI ANALIZA</div></div>
+      <div class="about-copy"><div class="eyebrow">O PODJETJU DEEPFAKE</div><h2>Pomagamo ločiti <span>resnično od umetnega.</span></h2><p>Umetna inteligenca odpira izjemne možnosti, hkrati pa je vse težje presoditi, ali je video pristen. DeepFake razvija pristop, ki ljudem in organizacijam pomaga preverjati digitalne vsebine.</p><p>Naš cilj je podpreti bolj odgovorno uporabo tehnologije in povečati zavedanje o tem, kako pomembno je preverjanje informacij.</p><a class="text-link" href="#detektor">Preizkusi detektor <span>→</span></a></div>
+    </section>
+
+    <section class="cta-section section-wrap">
+      <div class="cta-glow"></div><div class="eyebrow">PREVERJAJ PAMETNEJE</div><h2>Ne ugibaj. <span>Preveri.</span></h2><p>Začni z videoposnetkom in naredi naslednji korak k bolj informiranemu digitalnemu svetu.</p><a class="button button-primary" href="#detektor">Preveri videoposnetek <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand footer-brand" href="#domov"><span class="brand-mark">D<span class="pixel p1"></span><span class="pixel p2"></span><span class="pixel p3"></span></span><span class="brand-name">Deep<span>Fake</span></span></a>
+    <p>Več zaupanja v digitalni svet.</p>
+    <div class="footer-links"><a href="#kako-deluje">Kako deluje</a><a href="#o-nas">O nas</a><a href="#detektor">Detektor</a></div>
+    <small>© <span id="year"></span> DeepFake. Vse pravice pridržane.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
