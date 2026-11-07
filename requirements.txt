@@ -1,8 +1,12 @@
 streamlit
 torch
+torchvision
 transformers
 safetensors
 opencv-python-headless
 Pillow
 numpy
 pandas
+fastapi
+uvicorn
+python-multipart
