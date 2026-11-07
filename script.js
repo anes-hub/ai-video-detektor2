@@ -81,11 +81,12 @@ analyzeButton.addEventListener('click', async () => {
     data.append('file', selectedFile);
 
     const response = await fetch(
-'https://ai-video-detektor2.onrender.com/api/analyze'
-      method: 'POST',
-        body: data
-      }
-    );
+  'https://ai-video-detektor2.onrender.com/api/analyze',
+  {
+    method: 'POST',
+    body: data
+  }
+);
 
     const result = await response.json();
 
